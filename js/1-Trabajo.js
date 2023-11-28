@@ -33,6 +33,7 @@ function RetornarConfirmationDias(mes, cantDias){
 
 }
 
+
 nombreCompleto = prompt("Ingrese su nombre y apellido.").toLowerCase();
 
 for (let i = 0; i <= 2; i++) {
@@ -43,8 +44,7 @@ for (let i = 0; i <= 2; i++) {
   switch (i) {
     case 1:
       mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase()
-
-      while (mes !== "enero"){
+      while(mes !== "enero" && mes !== "febrero" && mes !== "marzo"){
         console.log("no hay disponibilidad en ese mes.");
         mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase();
       };
