@@ -44,16 +44,21 @@ for (let i = 0; i <= 2; i++) {
   switch (i) {
     case 1:
       mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase()
+
       while(mes !== "enero" && mes !== "febrero" && mes !== "marzo"){
         console.log("no hay disponibilidad en ese mes.");
         mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase();
       };
 
       cantDias = prompt("Ingrese los días que desea alojarse.").toLowerCase();
-
+      
       while (RetornarConfirmationDias(mes, cantDias) == false) {
         console.log(`no hay disponibilidad de días señor/a ${nombreCompleto}.`);
         mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase();
+        while(mes !== "enero" && mes !== "febrero" && mes !== "marzo"){
+          console.log("no hay disponibilidad en ese mes.");
+          mes = prompt("Ingrese el mes que desea alojarse.").toLowerCase();
+        };
         cantDias = prompt("Ingrese los días que desea alojarse.").toLowerCase();
       };
       break;
