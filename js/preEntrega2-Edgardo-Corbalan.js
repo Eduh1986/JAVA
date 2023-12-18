@@ -140,10 +140,10 @@ const menuInicio = () => {
                   };
                  
                   let idUsuario = usuariosReservas.length +1;
-                  let nombre = prompt("Ingrese el nombre del usuario");
-                  let apellido = prompt("Ingrese el apellido del usuario");
-                  let dni = prompt("Ingrese el dni del usuario");
-                  let email = prompt("Ingrese el email del usuario");
+                  let nombre = prompt("Ingrese el nombre del titular de la reserva.");
+                  let apellido = prompt("Ingrese el apellido del titular de la reserva.");
+                  let dni = prompt("Ingrese el dni del titular de la reserva.");
+                  let email = prompt("Ingrese el email del titular de la reserva.");
                   let usuarioReserva = { idUsuario: idUsuario ,nombre: nombre, apellido: apellido, email: email, dni: dni};
                   let fechaReserva = { idUsuario: idUsuario ,idCabania: idLugarCabaniaSeleccionada, FechaInicio: FechaIngresoSeleccionada, FechaFin: FechaSalidaSeleccionada}
                     
