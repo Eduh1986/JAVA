@@ -1,11 +1,12 @@
- 
-const obtenerComprasUsuario = async (idUsuario) => {
-    const resp = await fetch(`http://localhost:3000/usuarios/${id}`);
+ // Obtener el usuario por el idUsuario
+const obtenerUsuario = async (idUsuario) => {
+    const resp = await fetch(`http://localhost:3000/usuarios/${idUsuario}`);
     const data = await resp.json();
     console.log(data);
     return data;    
 }
-// Registrar un usuario
+
+ // Agregar un usuario
 const registrarUsuario = async (usuario) => {
     const resp = await fetch("http://localhost:3000/usuarios", {
         method: "POST",  // Indicamos que va a hacer una petición http POST
@@ -19,8 +20,8 @@ const registrarUsuario = async (usuario) => {
 }
 
 // Eliminar un usuario
-const eliminarTareaPorId = async (id) => {
-    const resp = await fetch(`http://localhost:3000/tareas/${id}`, {
+const eliminarUsuario = async (idUsuario) => {
+    const resp = await fetch(`http://localhost:3000/tareas/${idUsuario}`, {
         method: "DELETE",  // Indicamos que va a hacer una petición http DELETE
         headers: {
             "Content-type": "application/json; charset=UTF-8",
@@ -33,6 +34,7 @@ const eliminarTareaPorId = async (id) => {
 }
 
 export default {
-    obtenerUsuarios,
-    registrarUsuario
+    obtenerUsuario,
+    registrarUsuario,
+    eliminarUsuario
 }

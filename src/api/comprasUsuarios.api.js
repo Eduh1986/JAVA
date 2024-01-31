@@ -1,6 +1,6 @@
 // Obtener tarea por las compras del usuario por el idUsuario
 const obtenerComprasUsuario = async (idUsuario) => {
-    const resp = await fetch(`http://localhost:3000/comprasUsuarios/${id}`);
+    const resp = await fetch(`http://localhost:3000/comprasUsuarios/${idUsuario}`);
     const data = await resp.json();
     console.log(data);
     return data;    

@@ -1,10 +1,6 @@
-const Login = require("./components/Login") 
+import { Login } from "/Proyecto-Final/src/components/Login";
 
-const movieSearchBox = document.getElementById('movie-search-box');
-const searchList = document.getElementById('search-list');
-const resultGrid = document.getElementById('result-grid');
-
-export const app = () => {
+export const app  = () => {
       
-       Login();
- }
+      Login();
+}
