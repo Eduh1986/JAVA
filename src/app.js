@@ -1,4 +1,4 @@
-import { Login } from "/Proyecto-Final/src/components/Login";
+import { Login } from "../src/components/Login";
 
 export const app  = () => {
       

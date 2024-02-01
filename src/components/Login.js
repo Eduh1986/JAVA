@@ -1,8 +1,9 @@
+import Swal from "sweetalert2";
 import { rootPeli } from "/Proyecto-Final/main";
 import usuariosManager from "../managers/usuarios.manager";
-import loginPage from "../pages/Login.htm?raw";
+import loginPage from "../pages/login.html?raw";
 import { Registro } from "./Registro";
-import { TodoApp } from "./TodoApp";
+import { TodoApp } from "./PeliSale";
 
 export const Login = () => {
     rootPeli.innerHTML = "";

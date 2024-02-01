@@ -1,11 +1,11 @@
-import { crearTarea } from "../models/tareas.model.js";
-import htmlElements from "../elements/html.elements";
-import { crearBoton } from "../elements/button.element.js";
+import { crearTarea } from "../models/compraUsuario.model.js";
 import Swal from "sweetalert2";
 import Toastify from "toastify-js"
 import "toastify-js/src/toastify.css"
 
-let tareas = JSON.parse(localStorage.getItem("tareas")) || [];
+
+
+let comprasUsuario = JSON.parse(localStorage.getItem("tareas")) || [];
 
 const mostrarTareas = (tareas) => {
     // Borramos todos los elementos que tenga el contenedor

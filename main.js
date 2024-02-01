@@ -1,4 +1,4 @@
-import { app } from "/Proyecto-Final/src/app";
+import { app } from "./src/app";
 
 export const rootPeli = document.querySelector("#app");
 
