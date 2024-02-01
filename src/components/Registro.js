@@ -1,4 +1,4 @@
-import { rootApp } from "../../main";
+import { rootPeli } from "../../main";
 import usuariosManager from "../managers/usuarios.manager";
 import registroPage from "../pages/login.html?raw";
 // import { Login } from "./Login";

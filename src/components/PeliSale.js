@@ -1,4 +1,4 @@
-import { rootApp } from "../../main";
+import { rootPeli } from "../../main";
 import tareasManager from "../managers/comprasUsuario.manager";
 import todoAppPage from "../pages/peliSale.html?raw";
 
