@@ -3,6 +3,7 @@ import tareasManager from "../managers/comprasUsuario.manager";
 import todoAppPage from "../pages/peliSale.html?raw";
 
 export const TodoApp = () => {
+    
     rootPeli.innerHTML = "";
 
     let todoApp = document.createElement("div");

@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Titillium+Web:ital,wght@0,600;0,900;1,700&display=swap');
 
 :root{
-    --md-violet-color: #6e17d1;
+    --md-violet-color: #6a1cc4;
     --white-color: #ffffff;
     --light-dark-color: #292929;
-    --yellow-color: #d4aa11;
+    --yellow-color: #dfee0a;
 }
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0 ;
+    margin: 0  ;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+     
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -26,7 +27,7 @@ body{
 }
 .search-container{
     background-color: var(--md-violet-color);
-    height: 130px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -40,12 +41,13 @@ body{
 
 .logo{
     padding: 1rem 0;
-    border-bottom: 30px solid var(--light-dark-color);
+    border-bottom: 5px solid var(--light-dark-color);
 }
 .logo p{
     font-size: 15rem;
     color: #070606;
     font-weight: bold;
+    font-size:  80px;
 }
 .logo p span{
     color: var(--yellow-color);
@@ -78,21 +80,11 @@ img{
     -ms-flex-item-align: center;
     align-self: center;
     margin-right: 1rem;
-    font-size: 3rem;
     color: #fff;
-    font-weight: 750;
+    font-weight: 100;
     margin-bottom: 1.5rem;
 }
-.search-element .form-control{
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    border: none;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    outline: none;
-    color: var(--light-dark-color);
-    width: 850px;
-}
+
 .search-list{
     position: absolute;
     right: 0;
