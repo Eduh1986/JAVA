@@ -10,17 +10,14 @@ const agregarCompraUsuario = async (idPelicula, compraUsuario) => {
     // Valido si existe la compra de la película 
     if (comprasUsuario.filter((compraUsuario) => compraUsuario.idPelicula === idPelicula)){
         let compraUsuarioNueva = crearCompra(compraUsuario); // new Tarea(htmlElements.inputTarea.value);
-        await tareasApi.registrarTarea(tareaNueva);
+        await comprasUsuarioApi.registrarComprasUsuario( compraUsuarioNueva);
         Toastify({
-            text: `Se agrego la tarea ${tarea}`,
+            text: `Se agrego la compra ${compraUsuario}`,
             position: "left",
             gravity: "bottom",
         }).showToast();
     }
 };
-
-
-
 
 export default {
     agregarCompraUsuario

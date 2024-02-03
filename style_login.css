@@ -29,20 +29,10 @@ form label input::placeholder{
     color: rgba(37, 37, 37, 0.5);
 }
 
-form button.btn-primary{
-    color: #fff;
-    border:  none;
-    background: linear-gradient(to right, #282b16, #050505);
-    padding: 10px 15;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-
 #log{
-    color: #fff;
+    color: #bce01c;
     border:  none;
-    background: linear-gradient(to right, #bacb23, #54680f);
+    background: linear-gradient(to right, #080808, #0d0e0d);
     padding: 10px 15;
     cursor: pointer;
     font-size: 20px;
