@@ -1,17 +1,20 @@
 <div class="container d-flex flex-column align-items-center">
-
     <link rel="stylesheet" href="/style_login.css">
 
     <form class="d-flex flex-column my-3" id="loginForm" action="">
-        <label >
+        <label class="d-flex align-items-center mb-2">
             <i class="fa-solid fa-user"></i> 
-            <input  placeholder="mail" id="email"  class="form-control" ="email" type="email">
+            <input placeholder="mail" id="email" class="form-control" ="email" type="email">
         </label>              
-        <label >
+        <label class="d-flex align-items-center mb-2">
             <i class="fa-solid fa-lock"></i>
-            <input  placeholder="password"  id="password" class="form-control"  id="password" type="password">
+            <input placeholder="Contraseña" class="form-control"  id="password" type="password">
         </label>
-        <input class="btn btn-primary mt-3" type="submit" value="Login" id="log">
-        <button class="btn btn-primary" id="linkRegistro">Registrarse</button>
+        <label>
+            <input class="btn btn-primary mt-3" type="submit" value="            Acceder             " id="log">   
+        </label>   
+        <label >
+            <button class="btn btn-primary" id="linkRegistro">          Registrarse            </button>
+        </label>
     </form>
 </div>
