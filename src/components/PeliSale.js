@@ -3,11 +3,11 @@ import tareasManager from "../managers/comprasUsuario.manager";
 import todoAppPage from "../pages/peliSale.html?raw";
 
 export const TodoApp = () => {
-    rootApp.innerHTML = "";
+    rootPeli.innerHTML = "";
 
     let todoApp = document.createElement("div");
     todoApp.innerHTML = todoAppPage;
-    rootApp.appendChild(todoApp);
+    rootPeli.appendChild(todoApp);
 
     let formTarea = document.querySelector("#formTarea");
     let inputTarea = document.querySelector("#inputTarea");

@@ -1,11 +1,11 @@
 import { rootPeli } from "../../main";
 import usuariosManager from "../managers/usuarios.manager";
-import registroPage from "../pages/login.html?raw";
+import registroPage from "../pages/registro.html?raw";
 // import { Login } from "./Login";
 
 export const Registro = () => {
-    rootApp.innerHTML = "";
-    rootApp.innerHTML = registroPage;
+    rootPeli.innerHTML = "";
+    rootPeli.innerHTML = registroPage;
 
     let nombre = document.querySelector("#nombre");
     let apellido = document.querySelector("#apellido");
@@ -22,3 +22,4 @@ export const Registro = () => {
     }
 
 }
+console.log("hola")
