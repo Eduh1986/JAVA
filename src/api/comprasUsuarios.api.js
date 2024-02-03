@@ -1,4 +1,6 @@
-// Obtener  las compras del usuario por el idUsuario
+//-----------------------------------------------------
+// Obtener  las compras del usuario por el idUsuario --
+//-----------------------------------------------------
 const obtenerComprasUsuario = async () => {
     const resp = await fetch("http://localhost:3000/comprasUsuarios");
     const data = await resp.json();
@@ -6,7 +8,9 @@ const obtenerComprasUsuario = async () => {
     return data;    
 }
 
-// Agregar Compra al Usuario
+//-----------------------------
+// Agregar Compra al Usuario --
+//-----------------------------
 const registrarComprasUsuario = async (CompraUsuario) => {
     const resp = await fetch("http://localhost:3000/comprasUsuarios", {
         method: "POST",  // Indicamos que va a hacer una petición http POST
