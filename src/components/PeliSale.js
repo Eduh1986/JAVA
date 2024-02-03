@@ -14,8 +14,6 @@ export const TodoApp = () => {
     let tareasContenedor = document.querySelector("#tareasContenedor");
     let filtroTareas = document.querySelector("#filtroTareas");
 
-    tareasManager.mostrarTareas(tareasContenedor);
-
     formTarea.onsubmit = (event) => {
         event.preventDefault();
         tareasManager.agregarTarea(inputTarea.value, tareasContenedor)

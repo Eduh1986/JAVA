@@ -1,4 +1,12 @@
 {
-  "usuarios": [],
+  "usuarios": [
+    {
+      "id": "163de46d-b297-4510-ba32-634d2bf3b8f4",
+      "nombre": "Hugo Edgardo",
+      "apellido": "Corbalan",
+      "email": "edgardo_corbalan@hotmail.com",
+      "password": "Hola"
+    }
+  ],
   "comprasUsuarios": []
 }
