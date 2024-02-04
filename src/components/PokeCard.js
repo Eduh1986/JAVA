@@ -14,20 +14,26 @@ export const TodoApp = () => {
         event.preventDefault();
 
 
-     
+    // Crea el bloque de código HTML que deseas insertar
         const status = CompraManager.validarPokemon(inputPokerCard.value)  
 
         console.log(status)
 
+        let pokemon =  CompraManager.buscarPokemonPorNombre(inputPokerCard.value)
+
+        let idPokemon = pokemon.idPokemon
+   
+        console.log(idPokemon)
+
         let resultadoCard = document.getElementById("resultadoCard");
     
-        // Crea el bloque de código HTML que deseas insertar
+    
         let cardHTML = `
             <main class="flex">
                 <article class="card">
-                    <img src="https://pokeapi.co/api/v2/pokemon/${inputPokerCard.value}" alt="imagen header card" class="card-header">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg" alt="imagen header card" class="card-header">
                     <div class="card-body">
-                        <img src="https://pokeapi.co/api/v2/pokemon/${inputPokerCard.value}" alt="imagen de vitoko" class="card-body-img">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg" alt="imagen de vitoko" class="card-body-img">
                         <h1 class="card-body-title">
                             Victor charst
                             <span>26</span>

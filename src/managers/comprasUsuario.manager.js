@@ -1,5 +1,5 @@
 import comprasUsuarioApi from "../api/comprasUsuarios.api.js";
-import pokeCard from "../api/pokeCard.js";
+import pokeCard from "../api/pokeCard.api.js";
 import Swal from "sweetalert2";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
@@ -17,6 +17,15 @@ const validarPokemon= async (name) => {
         return false;
     }
 };
+
+// Buscar un usuario por email
+const buscarPokemonPorNombre = async (name) => {
+    // Obtenemos todos los usuarios de la base de datos
+    let pokemon = await pokeCard.obtenerPokemonPorNombre(name);
+
+    return pokemon;
+};
+
 const agregarCompraUsuario = async (idPokemon, compraUsuario) => {
     // Valido si existe la compra del pokemon
     if (comprasUsuario.filter((compraUsuario) => compraUsuario.idPokemon !== idPokemon)){
@@ -37,5 +46,6 @@ const agregarCompraUsuario = async (idPokemon, compraUsuario) => {
 
 export default {
     agregarCompraUsuario,
-    validarPokemon
+    validarPokemon,
+    buscarPokemonPorNombre
 };
