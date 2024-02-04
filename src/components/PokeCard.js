@@ -12,18 +12,13 @@ export const TodoApp = () => {
     let inputPokerCard = document.querySelector('#inputPokerCard')
     formBuscador.onsubmit = (event) => {
         event.preventDefault();
-
+       
 
     // Crea el bloque de código HTML que deseas insertar
-        const status = CompraManager.validarPokemon(inputPokerCard.value)  
-
-        console.log(status)
-
-        let pokemon =  CompraManager.buscarPokemonPorNombre(inputPokerCard.value)
-
-        let idPokemon = pokemon.idPokemon
+        const pokemon = CompraManager.buscarPokemonPorNombre(inputPokerCard.value) 
+     
    
-        console.log(idPokemon)
+        console.log(pokemon.idPokemon)
 
         let resultadoCard = document.getElementById("resultadoCard");
     
@@ -61,13 +56,6 @@ export const TodoApp = () => {
         resultadoCard.innerHTML = cardHTML;
 
 
-
-        const pintarCard = (pokemon) => {
-            const template = document.querySelector('.flex').content
-            const fragment = document.createDocumentFragment()
-
-            template.querySelector('card-body-img').setAtribute()
-        }
 
     }
 
