@@ -1,5 +1,5 @@
 import comprasUsuarioApi from "../api/comprasUsuarios.api.js";
-import peliSale from "../api/peliSale.api.js";
+import peliSale from "../api/pokeCard.js";
 import Swal from "sweetalert2";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
