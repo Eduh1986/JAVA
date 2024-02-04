@@ -5,8 +5,8 @@ import { Login } from "./Login";
 // import { Login } from "./Login";
 
 export const Registro = () => {
-    rootPeli.innerHTML = "";
-    rootPeli.innerHTML = registroPage;
+    rootPokeCard.innerHTML = "";
+    rootPokeCard.innerHTML = registroPage;
 
     let nombre = document.querySelector("#nombre");
     let apellido = document.querySelector("#apellido");
