@@ -6,17 +6,6 @@ import "toastify-js/src/toastify.css";
 
 let comprasUsuario = await comprasUsuarioApi.obtenerComprasUsuario() || []; 
 
-const validarPokemon= async (name) => {
-
-    let pokemon = await pokeCard.obtenerPokemonPorNombre(name);
-
-    if (!pokemon) {
-        return false;
-    }
-    if (pokemon.name !== name) {
-        return false;
-    }
-};
 
 // Buscar un usuario por email
 const buscarPokemonPorNombre = async (name) => {
@@ -46,6 +35,5 @@ const agregarCompraUsuario = async (idPokemon, compraUsuario) => {
 
 export default {
     agregarCompraUsuario,
-    validarPokemon,
     buscarPokemonPorNombre
 };

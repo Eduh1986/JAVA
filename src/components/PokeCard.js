@@ -1,7 +1,6 @@
 import { rootPokeCard } from "../../main";
 import CompraManager from "../managers/comprasUsuario.manager";
 import todoAppPage from "../pages/pokeCard.html?raw";
-
 export const TodoApp = () => {
 
 
@@ -13,22 +12,16 @@ export const TodoApp = () => {
     formBuscador.onsubmit = (event) => {
         event.preventDefault();
        
-
-    // Crea el bloque de código HTML que deseas insertar
-        const pokemon = CompraManager.buscarPokemonPorNombre(inputPokerCard.value) 
-     
-   
-        console.log(pokemon.idPokemon)
+         // Crea el bloque de código HTML que deseas insertar
+         const status = CompraManager.buscarPokemonPorNombre(inputPokerCard.value)   
 
         let resultadoCard = document.getElementById("resultadoCard");
-    
     
         let cardHTML = `
             <main class="flex">
                 <article class="card">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg" alt="imagen header card" class="card-header">
                     <div class="card-body">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${idPokemon}.svg" alt="imagen de vitoko" class="card-body-img">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${25}.svg" alt="imagen de vitoko" class="card-body-img">
                         <h1 class="card-body-title">
                             Victor charst
                             <span>26</span>
@@ -52,11 +45,8 @@ export const TodoApp = () => {
                 </article>
             </main>
         `;
-
+    
         resultadoCard.innerHTML = cardHTML;
-
-
-
+    
     }
-
 };
