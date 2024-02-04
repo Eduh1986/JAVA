@@ -1,13 +1,13 @@
 import Swal from "sweetalert2";
-import { rootPeli } from "/Proyecto-Final/main";
+import { rootPokeCard } from "/Proyecto-Final/main";
 import usuariosManager from "../managers/usuarios.manager";
 import loginPage from "../pages/login.html?raw";
 import { Registro } from "./Registro";
-import { TodoApp } from "./PeliSale";
+import { TodoApp } from "./PokeCard";
 
 export const Login = () => {
-    rootPeli.innerHTML = "";
-    rootPeli.innerHTML = loginPage;
+    rootPokeCard.innerHTML = "";
+    rootPokeCard.innerHTML = loginPage;
     
     let email = document.querySelector("#email");
     let password = document.querySelector("#password");

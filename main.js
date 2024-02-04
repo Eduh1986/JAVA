@@ -1,5 +1,5 @@
 import { app } from "./src/app";
 
-export const rootPeli = document.querySelector("#app");
+export const rootPokeCard = document.querySelector("#app");
 
 app();

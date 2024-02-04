@@ -1,9 +1,12 @@
 import comprasUsuarioApi from "../api/comprasUsuarios.api.js";
+import peliSale from "../api/peliSale.api.js";
 import Swal from "sweetalert2";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 
-let comprasUsuario = await comprasUsuarioApi.obtenerComprasUsuario() || []; //me falta colocar el usuario
+let comprasUsuario = await comprasUsuarioApi.obtenerComprasUsuario() || []; 
+
+let nba = await peliSale.obtenerPokemones() || [];
 
 
 const agregarCompraUsuario = async (idPelicula, compraUsuario) => {

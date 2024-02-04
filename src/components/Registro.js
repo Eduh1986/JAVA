@@ -1,4 +1,4 @@
-import { rootPeli } from "../../main";
+import { rootPokeCard } from "../../main";
 import usuariosManager from "../managers/usuarios.manager";
 import registroPage from "../pages/registro.html?raw";
 import { Login } from "./Login";

@@ -3,7 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #131212, #d8c414);
+    background: linear-gradient(to right, #f70202, #0036cce5);
 }
 
 form{
@@ -21,7 +21,7 @@ form label{
 
 form label .fa-solid{
     font-size: 20px;
-    color: #161313;
+    color: #0230ff;
     margin-right: 10px; 
 }
 
@@ -30,7 +30,7 @@ form label input::placeholder{
 }
 
 #log{
-    color: #111111;
+    color: #070707;
     border:  none;
     background: linear-gradient(to right, #cdee13, #ddf317);
     padding: 10px 15;
@@ -39,9 +39,9 @@ form label input::placeholder{
 }
 
 #linkRegistro{
-    color: #bce01c;
+    color: #ffffff;
     border:  none;
-    background: linear-gradient(to right, #080808, #0d0e0d);
+    background: linear-gradient(to right, #ff0202, #ff0202);
     padding: 10px 15;
     cursor: pointer;
     font-size: 20px;
