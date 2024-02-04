@@ -1,17 +1,25 @@
 import comprasUsuarioApi from "../api/comprasUsuarios.api.js";
-import peliSale from "../api/pokeCard.js";
+import pokeCard from "../api/pokeCard.js";
 import Swal from "sweetalert2";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 
 let comprasUsuario = await comprasUsuarioApi.obtenerComprasUsuario() || []; 
 
-let nba = await peliSale.obtenerPokemones() || [];
+const validarPokemon= async (name) => {
 
+    let pokemon = await pokeCard.obtenerPokemonPorNombre(name);
 
-const agregarCompraUsuario = async (idPelicula, compraUsuario) => {
-    // Valido si existe la compra de la película 
-    if (comprasUsuario.filter((compraUsuario) => compraUsuario.idPelicula === idPelicula)){
+    if (!pokemon) {
+        return false;
+    }
+    if (pokemon.name !== name) {
+        return false;
+    }
+};
+const agregarCompraUsuario = async (idPokemon, compraUsuario) => {
+    // Valido si existe la compra del pokemon
+    if (comprasUsuario.filter((compraUsuario) => compraUsuario.idPokemon !== idPokemon)){
         let compraUsuarioNueva = crearCompra(compraUsuario); // new Tarea(htmlElements.inputTarea.value);
         await comprasUsuarioApi.registrarComprasUsuario( compraUsuarioNueva);
         Toastify({
@@ -20,8 +28,14 @@ const agregarCompraUsuario = async (idPelicula, compraUsuario) => {
             gravity: "bottom",
         }).showToast();
     }
+    else{
+        Swal.fire({
+            title: "ya tiene este persona en su lista de cartas.",
+        }); 
+    }
 };
 
 export default {
-    agregarCompraUsuario
+    agregarCompraUsuario,
+    validarPokemon
 };

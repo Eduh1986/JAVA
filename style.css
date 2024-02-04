@@ -9,7 +9,7 @@
     display: block; /* Elimina el espacio extra por debajo de la imagen */
 }
 
-#formTarea {
+#formBuscador {
     display: flex;
     justify-content: center;
     align-items: center;

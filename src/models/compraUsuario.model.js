@@ -1,8 +1,8 @@
 
-export const crearCompra= (idUsuario, idPelicula) => {
+export const crearCompra= (idUsuario, idPokemon) => {
     let nuevaCompra = {
         idUsuario: idUsuario,
-        idPelicula: idPelicula
+        idPokemon: idPokemon
     }
 
     return nuevaCompra;
