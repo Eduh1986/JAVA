@@ -21,7 +21,7 @@ export const TodoApp = () => {
             <main class="flex">
                 <article class="card">
                     <div class="card-body">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${25}.svg" alt="imagen de vitoko" class="card-body-img">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${}.svg" alt="imagen de vitoko" class="card-body-img">
                         <h1 class="card-body-title">
                             Victor charst
                             <span>26</span>

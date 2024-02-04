@@ -7,4 +7,5 @@ const obtenerPokemonPorNombre = async (nombre) => {
 
 export default {
     obtenerPokemonPorNombre,
+    idnonono
 }
