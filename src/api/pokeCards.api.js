@@ -4,7 +4,7 @@ import todoAppPage from "../pages/pokeCard.html?raw";
 const obtenerPokemonPorNombre = async (nombre) => {
     const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
     const data = await resp.json();
-    mostrarHtml(data)
+    mostrarHtml(data);
     return data.id; 
 }
 
@@ -19,7 +19,7 @@ let resultadoCard = document.getElementById("resultadoCard");
         <main class="flex">
             <article class="card">
                 <div class="card-body">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${personajes.id}.svg" alt="imagen de vitoko" class="card-body-img">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${personajes.id}.svg" alt="imagen de vitoko" class="card-body-img"style="width: 150px;">
                     <h1 class="card-body-title">
                     </h1>
                 </div>
