@@ -14,39 +14,6 @@ export const TodoApp = () => {
        
          // Crea el bloque de código HTML que deseas insertar
          const status = CompraManager.buscarPokemonPorNombre(inputPokerCard.value)   
-
-        let resultadoCard = document.getElementById("resultadoCard");
-    
-        let cardHTML = `
-            <main class="flex">
-                <article class="card">
-                    <div class="card-body">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${}.svg" alt="imagen de vitoko" class="card-body-img">
-                        <h1 class="card-body-title">
-                            Victor charst
-                            <span>26</span>
-                        </h1>
-                        <p class="card-body-text">London</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-social">
-                            <h3>80K</h3>
-                            <p>Followers</p>
-                        </div>
-                        <div class="card-footer-social">
-                            <h3>803K</h3>
-                            <p>Likes</p>
-                        </div>
-                        <div class="card-footer-social">
-                            <h3>1.4K</h3>
-                            <p>Photos</p>
-                        </div>
-                    </div>
-                </article>
-            </main>
-        `;
-    
-        resultadoCard.innerHTML = cardHTML;
     
     }
 };
