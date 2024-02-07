@@ -1,19 +1,37 @@
+import Swal from "sweetalert2";
 import { rootPokeCard } from "../../main";
 import todoAppPage from "../pages/pokeCard.html?raw";
 
 const obtenerPokemonPorNombre = async (nombre) => {
+try {
     const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombre}`);
+
+
+    if (!resp.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
     const data = await resp.json();
     mostrarHtml(data);
     return data.id; 
+} catch (error) {
+    // Mostrar el mensaje de error usando SweetAlert
+    Swal.fire({
+        icon: 'error',
+        title: 'no existe el personaje',
+        text: error.message,
+    });
+}
 }
 
 const mostrarHtml = ( personajes ) => {
 
     rootPokeCard.innerHTML = "";
-rootPokeCard.innerHTML = todoAppPage;
+    rootPokeCard.innerHTML = todoAppPage;
 
-let resultadoCard = document.getElementById("resultadoCard");
+
+
+    let resultadoCard = document.getElementById("resultadoCard");
 
     let cardHTML = `
         <main class="flex">
